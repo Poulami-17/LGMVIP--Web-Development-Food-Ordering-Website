@@ -1,0 +1,677 @@
+ /* Reset CSS */
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+    overflow-x: hidden;
+}
+
+:root{
+    --navbar-height:59px;
+}
+/* Utility Properties */
+.center{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+/* Navigation Bar Styling */
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    height:113px;
+}
+/* Navigation Bar: Logo & Image */
+#logo img{
+    height: 71px;
+    margin: 4px 6px;
+    padding: 4px;
+    margin-bottom: 0px;
+}
+#logo img:hover{
+    cursor: pointer;
+}
+/* Navigation Bar: List */
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 397px;
+    margin-top: 7px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(238, 238, 241);
+    position: absolute;
+    top: 0px;
+    height: 96%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+#navbar ul li a{
+    color: rgb(238, 229, 229);
+    display: block;
+    text-decoration: none;
+    padding:0px 12px;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover{
+    color: rgb(62, 242, 248);
+}
+
+/* Navbar: Button */
+#btn{
+    height: 41px;
+    width: 45px;
+    margin-top: -5px;
+    border-radius: 50%;
+    margin-left: 358px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid white;
+}
+#btn i{
+    color: white;
+}
+#btn:hover{
+    cursor: pointer;
+}
+
+
+/* Home Styling */
+#home-Section{
+    display: flex;
+    flex-direction: column;
+    height: 425px;
+    padding: 35px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home-Section::before{
+    content:"";
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: url('back.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+
+/* Home Section: Heading */
+.h1-home{
+    font-size: 59px;
+    font-family: 'Merriweather', serif;
+    color: rgb(234, 241, 241);
+    margin-left: -750px;
+    margin-top: -18px;
+    padding-top: 0px;
+}
+/* Home Section: heading 2 */
+#h2-home{
+    color: bisque;
+    font-size:23px;
+    margin-top: 7px;
+    margin-left: -903px;
+}
+/* Home Section: Paragraph */
+#first-para{
+    color: azure;
+    font-size: 17px;
+    margin-left: -780px;
+    margin-top: 20px;
+}
+/* Home Section: Buttons */
+.dropdown{
+    margin-left: -1135px;
+    margin-top: 10px;
+}
+
+.dropdown-2{
+    margin-left: -735px;
+    margin-top: -37px;
+}
+
+/* Off-Canvus Styling */
+
+/* Off-Canvus: Heading */
+#offcanvasRight{
+    background-color:rgb(48, 44, 44);
+    height: fit-content;
+}
+#offcanvasRight h3{
+    color:wheat;
+    font-variant: small-caps;
+}
+/* Off Canvus: Body */
+
+.offcanvas-body ul{
+    list-style: none;
+}
+.offcanvas-body ul li a{
+    color: white;
+    border-radius: 8px;
+}
+.offcanvas-body hr{
+    color: white;
+    height: 3px;
+}
+/* Row Part Styling */
+.row ul{
+    display: flex;
+    list-style: none;
+    margin-top: 114px;
+}
+.row ul li a{
+    padding:122px;
+}
+#r1{
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    transition: all 0.2s ease-in-out;
+}
+#r1:hover{
+    height:140px;
+    width:140px;
+}
+#r2{
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    transition: all 0.2s ease-in-out;
+}
+#r2:hover{
+    height:140px;
+    width:140px;
+}
+#r3{
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    transition: all 0.2s ease-in-out;
+}
+#r3:hover{
+    height:140px;
+    width:140px;
+}
+#r4{
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    transition: all 0.2s ease-in-out;
+}
+#r4:hover{
+    height:140px;
+    width:140px;
+}
+
+/* About Section Styling */
+#About-Section{
+    margin-top: 23px;
+    height: 200px;
+    width: 100%;
+}
+/* About-Section:Right Part */
+.about-box{
+    background-color: rgb(78, 72, 72);
+    height: 607px;
+    width: 914px;
+    border-radius: 67px;
+    margin-top: 293px;
+    margin-left: 40%;
+    padding: 41px;
+}
+.about-box img{
+    margin-top: -229px;
+    margin-left: -191px;
+    width: 53%;
+}
+.about-text h2{
+    margin-top: -580px;
+    margin-left: 49%;
+    padding: 20px;
+    color: rgb(248, 242, 242);
+}
+.about-text p{
+    color: rgb(248, 242, 242);
+    text-align: justify;
+    margin-left: 265px;
+    margin-top: 28px;
+}
+.about-text h4{
+    color: deepskyblue;
+    margin-left: 255px;
+    margin-top: -19px;
+}
+/* About-Section: Rotate Text Styling */
+.rotate-text{
+    margin-left: -73%;
+    margin-top: -515px;
+}
+.rotate-text h1{
+    writing-mode: vertical-lr;
+    display: inline;
+    color: crimson;
+    text-shadow:2px 2px 8px rgb(85, 32, 32);
+    padding: 15px;
+    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    transform: rotate(180deg);
+    font-size: 3.0rem;
+    margin-left: -132px;
+}
+.rotate-text #r-img{
+    height: 378px;
+    width: auto;
+    padding: 43px;
+    margin-left: -8%;
+    margin-top: -435px;
+}
+
+/* Service-Section styling */
+.section-top h4{
+    margin-left: 4%;
+    color: crimson;
+}
+.section-top h2{
+    margin-left: 3%;
+}
+.section-top #section-para{
+    margin-left: 7%;
+    width: 687px;
+    position:unset;
+    color: crimson;
+}
+
+#Services-Section{
+    height: 234px;
+    width: 100%;
+    margin-top: 531px;
+}
+#Services-Section #carouselExampleCaptions{
+    height: 736px;
+    Width: 100%;
+    margin-top: 25px;
+}
+
+.carousel-inner img{
+    height: 736px;
+}
+
+/* Menu Section Styling */
+#Menu-Section{
+    margin-top: 902px;
+    margin-left:15px;
+    height: 2010px;
+    padding-right: 15px;
+}
+.menu-txt h4{
+    margin-left: 40%;
+    margin-top: -82px;
+    color: blue;
+}
+.menu-txt h2{
+    margin-left: 34%;
+}
+
+/* Menu Section: Card Styling */
+.Menu-Card{
+    margin-left: 2%;
+    padding: 15px;
+    margin-right: -166px;
+}
+.Menu-Card h4,h5{
+    color: rgb(82, 11, 148);
+}
+.card-text{
+    color: rgb(65, 14, 112);
+}
+.card{
+    margin-left: 1%;
+    margin-top: 16px;
+}
+.card img{
+    width: 287px;
+    height: 350px;
+}
+#card-2{
+    margin-left: 24%;
+    margin-top: -590px;
+}
+#card-3{
+    margin-left: 47%;
+    margin-top: -590px;
+}
+#card-4{
+    margin-left: 70%;
+    margin-top: -590px;
+}
+/* Menu Section: Part 2 */
+.menu-part-2{
+    margin-top: 44px;
+}
+
+#card-6{
+    margin-left: 24%;
+    margin-top: -590px;
+}
+#card-7{
+    margin-left: 47%;
+    margin-top: -590px;
+}
+#card-8{
+    margin-left: 70%;
+    margin-top: -590px;
+}
+/* Menu Section:Part 3 */
+.menu-part-3{
+    margin-top: 44px;
+    margin-left: 3%;
+    margin-right: -166px;
+}
+.menu-part-3 h4{
+    color: rgb(113, 19, 201);
+}
+#card-10{
+    margin-left: 24%;
+    margin-top: -590px;
+}
+#card-11{
+    margin-left: 47%;
+    margin-top: -590px;   
+}
+#card-12{
+    margin-left: 70%;
+    margin-top: -590px;
+}
+
+/* Delivery-Man Section Styling */
+#Delivery-Man{
+    width: 100%;
+    height: 566px;
+    margin-top: 164px;
+    background-color: rgb(12, 12, 82);
+}
+.join-content img{
+    margin-left: 5%;
+    margin-top: 23px;
+}
+.delivery-txt{
+    margin-left: 49%;
+    margin-top: -363px;
+    color: whitesmoke;
+}
+#join-para{
+    color: white;
+    width: 679px;
+}
+#btn-join{
+    background-color: darkorange;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-top: 15px;
+    width: 138px;
+    height: 47px;
+    font-size: 18px;
+}
+#btn-join:hover{
+    cursor: pointer;
+    background-color:rgb(216, 49, 82) ;
+}
+
+/* Blog Section Styling */
+#Blog-Section{
+    width: 100%;
+    height: 670px;
+    margin-top: 118px;
+    margin-left: 1%;
+    margin-right: -34px;
+}
+.blog-text h6{
+    color: crimson;
+    font-size: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 46%;
+}
+.blog-text h2{
+    color: crimson;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 39%;
+}
+.blog-text p{
+    color: crimson;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24%;
+}
+.blog-card{
+    border-radius: 15px;
+}
+.blogs-area{
+    margin-top: 23px;
+    margin-left: 1%;
+    margin-right: 52px;
+}
+.blogs-area img{
+    width: 462px;
+}
+.date{
+    height: 22px;
+    width: 118px;
+    margin-top: -30px;
+    margin-left: 73%;
+    margin-bottom: 10px;
+    padding-left:7px;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+}
+.card-title{
+    font-size: 24px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    font-weight: bolder;
+}
+/* Blog Section: button */
+#blog-btn{
+    height: 45px;
+    width: 120px;
+    background-color: rgb(6, 6, 19);
+    border: 3px solid gray;
+    color: white;
+    border-radius: 20px;
+    margin-left: 68%;
+    transition: all 0.2s ease-in-out;
+}
+#blog-btn:hover{
+    width: 140px;
+    color: black;
+    background-color: gray;
+    border: 2px solid rgb(0, 0, 0);
+}
+/* Blog Section:anchor tag */
+.blog-bottom{
+    margin-top: 61px;
+    margin-left: 46% ;
+}
+.blog-bottom a{
+    color:crimson;
+    font-size: 17px;
+}
+.blog-bottom a:hover{
+    color:rgb(24, 20, 214);
+    cursor: pointer;
+}
+
+/* Contact Section Styling */
+#Contact-Section{
+    margin-top: 165px;
+    height: 465px;
+    width: 100%;
+    background: url('contact.jpg') no-repeat center center/cover;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    opacity: 0.8;
+}
+/* Contact Section: Header Part */
+.left-most{
+    display: flex;
+}
+.left-most img{
+    height: 112px;
+    width: 105px;
+    margin-top: 75px;
+    margin-left: 5%;
+}
+.left-most #name{
+    margin-top: 102px;
+    margin-left: -1%;
+    color: white;
+}
+#contactus{
+    margin-top: 168px;
+    margin-left: -18%;
+    color: white;
+}
+/* Contact-Section:Form Styling */
+.form-content{
+    margin-top: 171px;
+    margin-left: -393px;
+    height: 339px;
+    padding: 35px;
+    width: 41%;
+}
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 372px;
+    height: 30px;
+    padding: 2px;
+    border: 3px solid rgb(59, 53, 53);
+    background-color: rgb(224, 208, 208);
+    margin: 11px auto;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.form-content h1{
+    text-align: center;
+}
+.form-btn{
+    display: block;
+    width: 307px;
+    margin: 20px auto;
+    height: 29px;
+    border-radius: 5px;
+    background-color: rgb(167, 157, 157);
+    border: 3px solid black;
+}
+.form-btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+/* Contact Section: Middle Part */
+.middle{
+    margin-top: -394px;
+    margin-left: 45%;
+}
+.middle h3{
+    color: white;
+}
+.middle ul{
+    list-style-type:none;
+}
+.middle ul li{
+    padding:10px;
+}
+.middle ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+.middle ul li a:hover{
+    color: cyan;
+    cursor: pointer;
+}
+/* Contact us: right-most Part */
+.right-most{
+    margin-left: 69%;
+    margin-top: -290px;
+}
+#right-head{
+    color: white;
+    margin-left: 23px;
+}
+.right-most ul{
+    list-style: none;
+}
+.right-most ul li{
+    text-decoration: none;
+    padding: 10px;
+}
+.right-most ul li a{
+    color: rgb(10 24 192);
+    font-size: 15px;
+}
+.right-most ul li a:hover{
+    color:crimson;
+    width: 34px;
+}
+
+
+/* footer section Styling */
+footer{
+    background: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 9px 20px;
+    margin-top:0px;
+}
+.center{
+    text-align: center;
+}
+
+/* Uplink Button Styling */
+#up-btn{
+    margin-top: 23px;
+    margin-left: 96%;
+    height: 42px;
+    width: 42px;
+    background-color: rgb(185, 20, 190);
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: sticky;
+}
+#up-btn:hover{
+    background-color: rgb(20, 20, 14);
+    color: white;
+    cursor: pointer;
+}
